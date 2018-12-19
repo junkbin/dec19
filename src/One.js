@@ -1,6 +1,8 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
+import {styles} from './OneStyle';
+
 export class One extends React.Component {
     constructor(props){
         super(props);
@@ -9,9 +11,9 @@ export class One extends React.Component {
 
     render() {
         return (
-            <View>
-                <Text>{this.state.title}</Text>
-                <Text>Hey buddyyy</Text>
+            <View style={[styles.constainer, styles.bgfy]}>
+                <Text style={styles.textify}>{this.state.title}</Text>
+                <Text style={styles.textify}>Hey buddyyy</Text>
             </View>
         );
     }
